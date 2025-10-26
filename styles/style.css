@@ -1,5 +1,19 @@
 @charset "UTF-8";
 /* место для вашего кода */
+.address {
+  width: 240px;
+  font-style: normal;
+  line-height: 23.4px;
+  text-underline-offset: 4px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.6;
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -32,13 +46,6 @@
 }
 .header .header__link {
   height: 105px;
-}
-
-.address {
-  width: 240px;
-  font-style: normal;
-  line-height: 23.4px;
-  text-underline-offset: 4px;
 }
 
 .cover {
@@ -93,13 +100,12 @@
   color: #fff;
   background: transparent;
   border: 1px solid #fff;
+  transition: 0.3s;
+  cursor: pointer;
 }
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: #000;
-  opacity: 0.6;
+.cover .cover__description .bet-button:hover {
+  color: #000;
+  background: #fff;
 }
 
 .lots {
